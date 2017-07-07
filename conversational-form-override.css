@@ -1,7 +1,7 @@
 body {
   background-color: #fcfcfc;
   font-size: 14px!important;
-  color: rgb(83,110,123);
+  color: rgb(83,110,123)!important;
 }
 
 .user.show.peak-thumb {
