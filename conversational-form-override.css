@@ -24,3 +24,7 @@ cf-chat-response.robot thumb {
 cf-chat-response.robot {
   padding-left: 54px;
 }
+
+.conversational-form--show {
+  display: none;
+}

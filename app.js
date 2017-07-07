@@ -7,6 +7,7 @@ $(document).ready(function () {
     formEl: document.getElementById('request-form'),
     userImage: 'http://via.placeholder.com/24x24',
     robotImage: 'ninja_avatar.png',
+    preventAutoStart: true,
     dictionaryData: {
       "input-placeholder": "Digite sua resposta ...",
       "input-no-filter": "Nenhum resultado encontrado com <strong>{input-value}</strong>",
@@ -18,5 +19,10 @@ $(document).ready(function () {
       console.log("Formdata:", formData);
       console.log("Formdata, serialized:", formDataSerialized);
     }
+  });
+
+  $("body").dblclick(function () {
+    $('.conversational-form--show').show();
+    firstStep.start();
   });
 });
