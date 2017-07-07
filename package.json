@@ -1,0 +1,23 @@
+{
+  "name": "conversational-form-demo",
+  "version": "1.0.0",
+  "description": "Conversational Form Demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config browser-sync.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iondrimba/conversational-form-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iondrimba/conversational-form-demo/issues"
+  },
+  "homepage": "https://github.com/iondrimba/conversational-form-demo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12"
+  }
+}
