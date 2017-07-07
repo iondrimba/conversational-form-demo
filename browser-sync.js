@@ -9,5 +9,5 @@ module.exports = {
   watchOptions: {
     ignoreInitial: true,
   },
-  files: ['*.html', '*.js']
+  files: ['*.html', '*.js', '*.css']
 }

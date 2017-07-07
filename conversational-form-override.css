@@ -1,0 +1,49 @@
+body {
+  background-color: #fcfcfc;
+  font-size: 14px!important;
+  color: rgb(83,110,123);
+}
+
+.conversational-form {
+  --position: initial!important;
+}
+
+.form__container.inputs.user {
+  --display: block!important;
+}
+
+.user.show.peak-thumb {
+  padding-right: 0;
+}
+
+.cf-chat-response.user thumb {
+  display: none;
+}
+
+cf-chat-response.user.show thumb {
+  display: none;
+}
+
+cf-chat-response.robot thumb {
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+}
+
+
+cf-chat-response.robot {
+  padding-left: 54px;
+}
+
+.conversational-form.conversational-form-inner {
+  /*--position: initial;
+  min-height: initial;
+  max-height: initial;
+  bottom: initial;*/
+}
+.cf-chat-response text {
+
+}
+
+.cf-chat-response.user text {
+
+}

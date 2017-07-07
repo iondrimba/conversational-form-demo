@@ -1,20 +1,17 @@
 $(document).ready(function () {
-  console.log('ready')
-  // new cf.ConversationalForm({
-  //   // HTMLFormElement
-  //   formEl: "#request-form",
-  //   //base64 || image url // overwrite user image, without overwritting the user dictionary
-  //   userImage: "",
-  //   /*?: string;*/
+  var f = $('.user').next();
+  var c = $('.user').children();
+  f.append(c);
 
-  //   // base64 || image url // overwrite robot image, without overwritting the robot dictionary
-  //   robotImage: "",
-  //   /*?: string;*/
-
-  //   // custom submit callback if button[type=submit] || form.submit() is not wanted..
-  //   submitCallback: function() {
-  //     console.log('submit');
-  //   },
-  //   loadExternalStyleSheet: true,
-  // });
+  var firstStep = new cf.ConversationalForm({
+    formEl: document.getElementById('request-form'),
+    userImage: 'http://via.placeholder.com/24x24',
+    robotImage: 'ninja_avatar.png',
+    submitCallback: function (e) {
+      var formData = firstStep.getFormData();
+      var formDataSerialized = firstStep.getFormData(true);
+      console.log("Formdata:", formData);
+      console.log("Formdata, serialized:", formDataSerialized);
+    }
+  });
 });
