@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("body").dblclick(function () {
+  $(".chat-bot").click(function () {
     var f = $('.user').next();
     var c = $('.user').children();
     f.append(c);
@@ -23,5 +23,6 @@ $(document).ready(function () {
     });
     $('.conversational-form--show').show();
     firstStep.start();
+    $("html, body").animate({ scrollTop: $(document).height() }, 0);
   });
 });
