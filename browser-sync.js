@@ -1,13 +1,12 @@
 module.exports = {
   server: {
-    baseDir: "",
-    index: "index.htm"
+    baseDir: "./",
+    index: "index.html"
   },
-  open: "local",
   injectChanges: true,
   startPath: "index.html",
   watchOptions: {
-    ignoreInitial: true,
+    ignoreInitial: false,
   },
   files: ['*.html', '*.js', '*.css']
 }
